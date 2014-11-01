@@ -1,9 +1,15 @@
 # CVKInjector
 
-[![CI Status](http://img.shields.io/travis/Romans Karpelcevs/CVKInjector.svg?style=flat)](https://travis-ci.org/Romans Karpelcevs/CVKInjector)
+[![CI Status](http://img.shields.io/travis/coverback/CVKInjector.svg?style=flat)](https://travis-ci.org/coverback/CVKInjector)
 [![Version](https://img.shields.io/cocoapods/v/CVKInjector.svg?style=flat)](http://cocoadocs.org/docsets/CVKInjector)
 [![License](https://img.shields.io/cocoapods/l/CVKInjector.svg?style=flat)](http://cocoadocs.org/docsets/CVKInjector)
 [![Platform](https://img.shields.io/cocoapods/p/CVKInjector.svg?style=flat)](http://cocoadocs.org/docsets/CVKInjector)
+
+CVKInjector is a simple dependency injection helper for Objective-C. All you have to do is register
+a class with the injector, and then request an object by interface from the place you need it.
+
+No fancy macros, no additional syntax, no auto-injected Spring-like stuff. Plain, clean Objective-C
+which is understandable by anyone.
 
 ## Usage
 
