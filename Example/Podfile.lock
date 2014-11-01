@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CVKInjector: af3c24f7c4215e716f0b68a52088c0169124c150
+  CVKInjector: da9b00dae33baa3916f8eb82ce25318e638576cf
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
 
