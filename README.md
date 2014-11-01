@@ -11,18 +11,45 @@ a class with the injector, and then request an object by interface from the plac
 No fancy macros, no additional syntax, no auto-injected Spring-like stuff. Plain, clean Objective-C
 which is understandable by anyone.
 
+### Why would I need this?
+
+Relying on interfaces instead of concrete implementations helps better design and testing. For example, controller does not need to know which data source it is using, whether it is network, database or a mock.
+
+Passing concrete instances into initialisers is not always possible, and it can bloat inits with many objects. Dependency injection provides a clean way to decouple classes in the project.
+
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+#### Registering classes
 
-## Requirements
+Use `[CVKInjector inject]` to access singleton injector object.
+Register a class with the injector. Any moment before the first object is needed is fine, but one of the easier options is adding registration into `+load` method:
+
+```objective-c
++ (void)load
+{
+    [[CVKInjector injector] registerClass:self];
+}
+```
+
+You can also register classes as singletons, this way the same instace will be injected. All classes are constructed using plain `-init`, and it isn't configurable.
+
+#### Injecting dependency
+
+Whenever you need an object implementing some particular protocol, you call `-objectForInterface:` method:
+```objective-c
+@property (nonatomic) id<ProtocolName> property;
+
+self.property = [[CVKInjector injector] objectForInterface:@protocol(ProtocolName)];
+```
+
+User does not know exact class implementation, neither if it is a singleton or a new instance.
 
 ## Installation
 
 CVKInjector is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-    pod "CVKInjector"
+    pod 'CVKInjector'
 
 ## Author
 
