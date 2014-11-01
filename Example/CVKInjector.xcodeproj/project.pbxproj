@@ -10,8 +10,12 @@
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		64EA94B7BE261CB59BEC1B41 /* libPods-CVKInjector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 686E357C4CED224E6DBCFAD7 /* libPods-CVKInjector.a */; };
+		9C6EA9CA1A053702004F2784 /* CVKSingletonStorageSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6EA9C71A053702004F2784 /* CVKSingletonStorageSpec.m */; };
+		9C6EA9CB1A053702004F2784 /* CVKInjectorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6EA9C81A053702004F2784 /* CVKInjectorSpec.m */; };
+		9C6EA9CC1A053702004F2784 /* CVKInjectorDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6EA9C91A053702004F2784 /* CVKInjectorDataItem.m */; };
+		9C6EA9D01A053755004F2784 /* SharedBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6EA9CE1A053755004F2784 /* SharedBehaviors.m */; };
+		9C6EA9D11A053755004F2784 /* SingletonBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6EA9CF1A053755004F2784 /* SingletonBehavior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +27,15 @@
 		6003F5AE195388D20070C39A /* CVKInjector.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVKInjector.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		686E357C4CED224E6DBCFAD7 /* libPods-CVKInjector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CVKInjector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A570027D185CA91AA89C884 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9C6EA9C71A053702004F2784 /* CVKSingletonStorageSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVKSingletonStorageSpec.m; sourceTree = "<group>"; };
+		9C6EA9C81A053702004F2784 /* CVKInjectorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVKInjectorSpec.m; sourceTree = "<group>"; };
+		9C6EA9C91A053702004F2784 /* CVKInjectorDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVKInjectorDataItem.m; sourceTree = "<group>"; };
+		9C6EA9CD1A053755004F2784 /* SharedBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedBehaviors.h; sourceTree = "<group>"; };
+		9C6EA9CE1A053755004F2784 /* SharedBehaviors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedBehaviors.m; sourceTree = "<group>"; };
+		9C6EA9CF1A053755004F2784 /* SingletonBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonBehavior.m; sourceTree = "<group>"; };
 		DAA4461D92DFFF7DF991CEFF /* Pods-CVKInjector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVKInjector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CVKInjector/Pods-CVKInjector.debug.xcconfig"; sourceTree = "<group>"; };
 		F39DCDCD7DCF164FC20B211C /* Pods-CVKInjector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVKInjector.release.xcconfig"; path = "Pods/Target Support Files/Pods-CVKInjector/Pods-CVKInjector.release.xcconfig"; sourceTree = "<group>"; };
 		F646554FB1B478CD23AF5C1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -82,7 +91,12 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				9C6EA9CD1A053755004F2784 /* SharedBehaviors.h */,
+				9C6EA9CE1A053755004F2784 /* SharedBehaviors.m */,
+				9C6EA9CF1A053755004F2784 /* SingletonBehavior.m */,
+				9C6EA9C81A053702004F2784 /* CVKInjectorSpec.m */,
+				9C6EA9C71A053702004F2784 /* CVKSingletonStorageSpec.m */,
+				9C6EA9C91A053702004F2784 /* CVKInjectorDataItem.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -218,7 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				9C6EA9CA1A053702004F2784 /* CVKSingletonStorageSpec.m in Sources */,
+				9C6EA9CC1A053702004F2784 /* CVKInjectorDataItem.m in Sources */,
+				9C6EA9CB1A053702004F2784 /* CVKInjectorSpec.m in Sources */,
+				9C6EA9D11A053755004F2784 /* SingletonBehavior.m in Sources */,
+				9C6EA9D01A053755004F2784 /* SharedBehaviors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
