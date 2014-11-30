@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "CVKInjector"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "Trivial dependency injector for Objective-C."
   s.homepage         = "https://github.com/coverback/CVKInjector"
   s.license          = 'MIT'

@@ -1,5 +1,5 @@
 PODS:
-  - CVKInjector (0.1.0)
+  - CVKInjector (0.2.0)
   - Expecta (0.3.1)
   - Specta (0.2.1)
 
@@ -13,8 +13,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CVKInjector: 6ded59ee287e24a716e19bebac2d85a4c899bf0d
+  CVKInjector: 3e7a3c0d0eed338ef9b48cb4e7c182f61eb727cc
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.35.0
