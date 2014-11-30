@@ -19,7 +19,7 @@ describe(@"Injector", ^{
     });
 
     itShouldBehaveLike(kSharedBehaviorSingleton, @{kSharedBehaviorObjectKey: [CVKInjector class],
-                                                   kSharedBehaviorMethodKey: @"injector"});
+                                                   kSharedBehaviorMethodKey: @"instance"});
     
     it(@"should allow registering classes", ^{
         expect(^{ [injector registerClass:[NSObject class]]; }).notTo.raiseAny();

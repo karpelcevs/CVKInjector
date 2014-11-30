@@ -21,13 +21,13 @@ Passing concrete instances into initialisers is not always possible, and it can 
 
 #### Registering classes
 
-Use `[CVKInjector inject]` to access singleton injector object.
+Use `[CVKInjector instance]` to access singleton injector object.
 Register a class with the injector. Any moment before the first object is needed is fine, but one of the easier options is adding registration into `+load` method:
 
 ```objective-c
 + (void)load
 {
-    [[CVKInjector injector] registerClass:self];
+    [[CVKInjector instance] registerClass:self];
 }
 ```
 
@@ -39,7 +39,7 @@ Whenever you need an object implementing some particular protocol, you call `-ob
 ```objective-c
 @property (nonatomic) id<ProtocolName> property;
 
-self.property = [[CVKInjector injector] objectForInterface:@protocol(ProtocolName)];
+self.property = [[CVKInjector instance] objectForInterface:@protocol(ProtocolName)];
 ```
 
 User does not know exact class implementation, neither if it is a singleton or a new instance.

@@ -57,7 +57,7 @@
     return nil;
 }
 
-+ (instancetype)injector
++ (instancetype)instance
 {
     static CVKInjector *_instance = nil;
     static dispatch_once_t onceToken;

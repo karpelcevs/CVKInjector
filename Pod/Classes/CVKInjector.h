@@ -10,7 +10,7 @@
 
 @interface CVKInjector : NSObject
 
-+ (instancetype)injector;
++ (instancetype)instance;
 - (void)registerClass:(Class)injectableClass;
 - (void)registerClass:(Class)injectableClass asSingleton:(BOOL)asSingleton;
 - (id)objectForInterface:(Protocol *)protocol;
